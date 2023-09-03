@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/css/index.css" />
+    <script src="./js/validation.js" defer></script>
+    <script
+      src="../node_modules/bootstrap/dist/js/bootstrap.min.js"
+      defer
+    ></script>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper-lite.min.js"></script>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Hyseh</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Feed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Upload</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+      <div class="container-fluid">
+        <div class="row d-flex flex-column align-content-center mx-2">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-6 col-xxl-4 mb-3 p-0">
+            <form
+              class="needs-validation"
+              novalidate
+              action="./profile/index.html"
+            >
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email-input"
+                  placeholder="Email address"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your email</div>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password-input"
+                  placeholder="Password"
+                  minlength="8"
+                  maxlength="20"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your password</div>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="form-check text-start my-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="remember-me"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Sign in
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer bg-body-tertiary mt-auto py-3">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Feed</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Support</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Terms of service</a>
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary">
+        © 2023 Hyseh, Inc. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>

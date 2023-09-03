@@ -1,0 +1,29 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.feed-img {
+    height: clamp(360px, 80vw, 680px);
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.profile-img {
+    img {
+        aspect-ratio: 1/1;
+        height: clamp(32px, 50vw, 96px);
+        object-fit: cover;
+    }
+}
+
+.list-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    li {
+        list-style-type: none;
+    }
+}
